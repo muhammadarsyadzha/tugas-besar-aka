@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemilihan Mata Kuliah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/primer-utama.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img src="image/primer-utama.png" style="height: 50px" />
+      <h1>Pemilihan Mata Kuliah</h1>
+      <p>Pilih mata kuliah sesuai batas SKS yang tersedia.</p>
+    </header>
+    <main>
+      <div class="course-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Pilih</th>
+              <th>Mata Kuliah</th>
+              <th>SKS</th>
+              <th>Benefit</th>
+            </tr>
+          </thead>
+          <tbody id="courses-list"></tbody>
+        </table>
+      </div>
+      <div class="info">
+        <p id="total-sks">Total SKS: 0/23</p>
+        <button id="auto-select-btn">Pilih Otomatis</button>
+        <button id="uncheck-all-btn">Uncheck All</button>
+        <button id="submit-btn">Submit</button>
+      </div>
+      <div id="result">
+        <h3>Hasil Mata Kuliah yang Dipilih:</h3>
+        <ul id="selected-courses-list"></ul>
+      </div>
+    </main>
+    <script src="data.js"></script>
+  </body>
+</html>
